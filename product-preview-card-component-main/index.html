@@ -16,19 +16,47 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      .attribution {
+      /* .attribution {
         font-size: 11px;
         text-align: center;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
+      } */
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .main {
+        height: 100vh;
+        background-color: hsl(30, 38%, 92%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        height: 60%;
+        width: 60%;
+      }
+
+      .img {
+        height: 100%;
+      }
+
+      .img img {
+        height: 100%;
       }
     </style>
   </head>
   <body>
     <div class="main">
       <div class="container">
-        <div class="img"></div>
+        <div class="img">
+          <img src="images/image-product-desktop.jpg" alt="" />
+        </div>
         <div class="description">
           <h1 class="heading-primary">Perfume</h1>
           Gabrielle Essence Eau De Parfum
