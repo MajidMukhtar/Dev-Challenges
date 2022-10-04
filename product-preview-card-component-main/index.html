@@ -39,6 +39,7 @@
       * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
 
       .mg-btm {
@@ -55,13 +56,15 @@
 
       .container {
         height: 60%;
-        width: 60%;
+        width: 40%;
         display: flex;
+        border-radius: 10px;
+        overflow: hidden;
       }
 
       .img {
         height: 100%;
-        width: 500px;
+        width: 400px;
       }
 
       .img img {
@@ -70,7 +73,7 @@
       }
 
       .description {
-        width: 500px;
+        width: 400px;
         background-color: #fff;
         padding: 45px 45px;
       }
@@ -93,6 +96,15 @@
         max-width: 330px;
         word-wrap: break-word;
       }
+
+      .text {
+        font-size: 17px;
+        color: hsl(228, 12%, 48%);
+        font-family: Montserrat;
+        line-height: 1.5;
+        max-width: 330px;
+        word-wrap: break-word;
+      }
     </style>
   </head>
   <body>
@@ -106,9 +118,9 @@
           <h2 class="heading-secondary mg-btm">
             Gabrielle Essence Eau De Parfum
           </h2>
-          <p class="text">
-            Preview A floral, solar and voluptuous interpretation composed by
-            Olivier Polge, Perfumer-Creator for the House of CHANEL.
+          <p class="text mg-btm">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
           </p>
           <div class="price">
             <p class="discount-price">$149.99</p>
