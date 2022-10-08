@@ -105,6 +105,43 @@
         max-width: 330px;
         word-wrap: break-word;
       }
+
+      .price {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .discount-price {
+        color: hsl(158, 36%, 37%);
+        font-family: Fraunces;
+        font-size: 40px;
+        font-weight: 700;
+      }
+
+      .regular-price {
+        color: hsl(228, 12%, 48%);
+        font-size: 20px;
+        text-decoration: line-through;
+      }
+
+      .icon {
+        font-size: 30px;
+      }
+
+      .btn {
+        background-color: hsl(158, 36%, 37%);
+        color: #fff;
+        font-size: 19px;
+        font-weight: 700;
+        padding: 15px 70px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
     </style>
   </head>
   <body>
@@ -122,11 +159,13 @@
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
-          <div class="price">
+          <div class="price mg-btm">
             <p class="discount-price">$149.99</p>
             <p class="regular-price">$169.99</p>
           </div>
-          <button class="btn">Add to Cart</button>
+          <button class="btn">
+            <ion-icon class="icon" name="cart-outline"></ion-icon>Add to Cart
+          </button>
         </div>
       </div>
     </div>
@@ -135,5 +174,13 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
